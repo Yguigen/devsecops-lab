@@ -1,0 +1,9 @@
+title = "DevSecOps Training"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "devsecops-demo-marker"
+description = "Detect synthetic training markers"
+regex = '''DEVSECOPS_DEMO_SECRET_[A-Z0-9]{8}'''
