@@ -8,5 +8,8 @@ class TestAdd(unittest.TestCase):
     def test_negative(self):
         self.assertEqual(add(-1, 1), 0)
 
+    def test_zero_identity(self):
+        self.assertEqual(add(0, 7), 7)
+
 if __name__ == "__main__":
     unittest.main()
